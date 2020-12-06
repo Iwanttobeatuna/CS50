@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<!-- Notes on images: They are all designed from Canva. -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar (Ref: Bootstrap documentation) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Hi!</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quick links
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="https://zad.home.blog/">My Blog</a>
+              <a class="dropdown-item" href="https://projectbawe.org/">Project BAWE</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/zad-chin/">LinkedIn</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- Page content -->
+<div class="content">
+    <!-- Intro -->
+    <div class="mySlides display-container w3-center" id ="Home">
+        <img src="/homepage/1.png" alt = "home page" style="width:100%">
+    </div>
+
+     <!-- About me -->
+    <div class = "about" id='about'>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <img src="/homepage/zad2.jpg" alt= "my-photo" class="img-fluid">
+    </div>
+   <div class="col-lg-8 col-md-8 col-sm-12 desc">
+
+    <h2 class="wide">ABOUT ME</h2>
+        <p class="justify">My name is Zad and I am currently a freshman at Harvard University! Welcome to my blog for CS50!</p>
+        <p>When I am free, I love to write, volunteer and build something fun! Drop me a message if you think we can be friends!</p>
+        <p>All my social media accounts can be found in the footer!</p>
+        <p>And here's a photo of mine!</p>
+   </div>
+  </div>
+ </div>
+
+
+    <!--Hobbies -->
+    <div class = "row w3-center" id ="Hobbies">
+        <div class = 'col-md-4'>
+            <div class =  'Hobbies'>
+                <img src="/homepage/2.png" alt="Volunteering" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Volunteering</b></p>
+                        <p>Enthusiats about ending education inequality in Malaysia. A few initiatives that I have started: Project BAWE, base.initiatives, ProjeckBoundless</p>
+                        <button class="button w3-black w3-margin-bottom" onclick="window.location.href='https://flow.page/volunteering'">Volunteering</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class = 'col-md-4'>
+            <div class =  'Hobbies'>
+                <img src="/homepage/4.png" alt="Writing" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Writings</b></p>
+                        <p>I write times to times when I have idea! Visit my blog by clicking the button!</p>
+                        <button class="button w3-black w3-margin-bottom" onclick="window.location.href='https://zad.home.blog/'">My blog</button>
+                    </div>
+            </div>
+        </div>
+
+         <div class = 'col-md-4'>
+            <div class =  'Hobbies'>
+                <img src="/homepage/3.png" alt="Building" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                        <p><b>Buildings</b></p>
+                        <p>I play with Arduino!Recently on an aeroponics project!
+                        If playing stocks count, recently, I am into algorithm trading! </p>
+                        <button class="button w3-black w3-margin-bottom" onclick="window.location.href='https://www.instructables.com/member/Emily%20Chin%20Qi%20Qi/'">Instructables!</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center opacity light-grey xlarge">
+
+    <a href="https://www.facebook.com/emily.qiqi.3/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/zippy_zad/?hl=en"> <i class="fa fa-instagram w3-hover-opacit"></i></a>
+    <a href="https://www.linkedin.com/in/zad-chin/"> <i class="fa fa-linkedin w3-hover-opacityy"></i></a>
+    <p class="w3-medium"> CS50 Fall 2020 - Zad Chin</p>
+
+</footer>
+
+
+</body>
+
+</html>
